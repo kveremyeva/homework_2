@@ -8,7 +8,7 @@ class MyServer(BaseHTTPRequestHandler):
         """Обработка GET-запросов"""
         try:
             # Читаем HTML файл
-            with open('contacts.html', 'r', encoding='utf-8') as file:
+            with open('./src/contact.html', 'r', encoding='utf-8') as file:
                 html_content = file.read()
 
             # Отправляем успешный ответ
